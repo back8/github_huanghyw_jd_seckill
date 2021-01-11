@@ -116,7 +116,7 @@
 
 ```bash
 $ sudo apt-get install qrencode zbar-tools # 安装二维码解析和生成的工具，用于读取二维码并在命令行输出。
-$ zbarimg qr_code.png > qrcode.txt && qrencode -r qrcode.txt -o - -t UTF8 # 解析二维码输出到命令行窗口。
+$ zbarimg qr_code.png > qrcode.txt && cat qrcode.txt | qrencode -o - -t UTF8 # 解析二维码输出到命令行窗口。
 ```
 
 #### 5.抢购结果确认 
